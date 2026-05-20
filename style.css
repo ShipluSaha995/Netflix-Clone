@@ -1,13 +1,12 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Akt:wght@100..900&family=Caveat:wght@400..700&family=Fjalla+One&display=swap');
 
 
-*{
+* {
     padding: 0;
     margin: 0;
 }
 
-.main{
+.main {
     background-image: url(assets/images/image.png);
     height: 70vh;
     position: relative;
@@ -16,17 +15,17 @@
     background-repeat: no-repeat;
 }
 
-.main .box{
+.main .box {
     height: 70vh;
     width: 100%;
-    opacity: 0.44;
+    opacity: 0.70;
     position: absolute;
     top: 0;
     background-color: black;
-    
+
 }
 
-nav{
+nav {
     max-width: 60vw;
     margin: auto;
     justify-content: space-between;
@@ -37,13 +36,20 @@ nav{
     z-index: 10;
 }
 
-nav .img{
-    color: red;
-    width: 114px;
-    
+nav div{
+    position: relative;
+    left: 20px;
+    top: 8px;
+}
+nav img{
+    width: 150px;
+    position: relative;
+    z-index: 10;
+    left: -30px;
+    top: 15px;
 }
 
-.hero{
+.hero {
     height: 80%;
     display: flex;
     align-items: center;
@@ -52,40 +58,40 @@ nav .img{
     color: white;
     position: relative;
     z-index: 10;
-    
+
     font-family: "Caveat", cursive;
     font-optical-sizing: auto;
     font-weight: 400;
-    font-style: normal; 
+    font-style: normal;
     gap: 23px;
     padding: 0, 30px;
 }
 
-.hero> :first-child{
+.hero> :first-child {
     font-weight: 900;
     font-size: 4.5rem;
     text-align: center;
 }
 
 
-.hero> :nth-child(2){
+.hero> :nth-child(2) {
     font-family: unset;
     font-size: 2rem;
     font-weight: 500;
     text-align: center;
 }
 
-.hero> :nth-child(3){
+.hero> :nth-child(3) {
     font-size: 1.5rem;
     font-weight: 500;
     text-align: center;
 }
 
-body{
+body {
     background-color: black;
 }
 
-.separation{
+.separation {
     height: 11px;
     background-color: rgb(31, 30, 30);
     position: absolute;
@@ -94,41 +100,66 @@ body{
     z-index: 20;
 }
 
-.btn{
-    padding: 3px 10px;
+.btn {
+    padding: 7px 14px;
     font-weight: bold;
     background-color: white;
+    background-color: rgba(255, 255, 255, 0.199);
+    color: aliceblue;
+    border-radius: 3px;
+    cursor: pointer;
+    
 }
 
-.btn-red{
+.btn-red {
     background-color: rgb(255, 0, 0);
     color: aliceblue;
-    padding: 3px 13px;
+    padding: 14px 14px;
     font-size: 20px;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
-.btn-red-sm{
+.btn-red-sm {
     background-color: red;
     color: aliceblue;
 }
 
-.main input{
-    padding: 5px 62px 6px 6px;
-    font-size: 14px;
+.main input {
+    padding: 21px 310px 8px 6px;
+    font-size: 15px;
     font-weight: 900;
     border-radius: 5px;
     background-color: rgba(23, 23, 23, 0.5);
     border: 1px solid rgba(255, 235, 235, 0.5);
     color: aliceblue;
-
-
 }
 
-.hero-button{
+
+
+
+.hero-button {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 3px;
+
+}
+
+.first{
+    display: flex;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.secImg{
+    position: relative;
+}
+
+.secImg img{
+    width: 30vw;
 
 }
