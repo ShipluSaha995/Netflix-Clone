@@ -50,7 +50,7 @@ nav img{
 }
 
 .hero {
-    height: 80%;
+    height: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -109,9 +109,9 @@ body {
 }
 
 .btn-red {
-    background-color: rgb(255, 0, 0);
+    background-color: rgb(219, 1, 1);
     color: aliceblue;
-    padding: 14px 14px;
+    padding: 14px 31px;
     font-size: 20px;
     border-radius: 10px;
 }
@@ -122,8 +122,8 @@ body {
 }
 
 .main input {
-    padding: 21px 310px 8px 6px;
-    font-size: 15px;
+    padding: 21px 277px 13px 6px;
+    font-size: 18px;
     font-weight: 900;
     border-radius: 5px;
     background-color: rgba(23, 23, 23, 0.5);
@@ -208,9 +208,23 @@ section.first > div{
     background-color: #272626;
     padding: 24px;
     max-width: 60vw;
-    margin: 34px auto;
+    margin: 8px auto;
     cursor: pointer;
 
     font-size: 24px;
     font-weight: bolder;
+}
+
+
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+}
+
+.footer-item{
+    display: flex;
+    flex-direction: column;
 }
