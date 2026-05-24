@@ -8,7 +8,7 @@
 
 .main {
     background-image: url(assets/images/image.png);
-    height: 70vh;
+    height: 100vh;
     position: relative;
     background-position: center center;
     background-size: max(1200px, 100vw);
@@ -16,7 +16,7 @@
 }
 
 .main .box {
-    height: 70vh;
+    height: 100vh;
     width: 100%;
     opacity: 0.70;
     position: absolute;
@@ -94,10 +94,7 @@ body {
 .separation {
     height: 11px;
     background-color: rgb(31, 30, 30);
-    position: absolute;
-    bottom: 0;
     width: 100%;
-    z-index: 20;
 }
 
 .btn {
@@ -145,14 +142,14 @@ body {
 
 }
 
-.first{
+.first {
     display: flex;
     justify-content: center;
     max-width: 70vw;
     margin: auto;
     color: white;
-    justify-content: center;
     align-items: center;
+    position: relative;  /* Add this */
 }
 
 .secImg{
@@ -185,4 +182,35 @@ section.first > div{
 .first > div > :nth-child(2){
     font-size: 24px;
     font-weight: 400;
+}
+
+.faq h2{
+    text-align: center;
+    font-size: 48px;
+}
+
+
+.faq{
+    background: black;
+    color: white;
+    padding: 34px;
+}
+
+.faqbox:hover{
+    
+    background-color: rgb(70, 66, 66);
+}
+
+.faqbox{
+    transition: all ;
+    display: flex;
+    justify-content: space-between;
+    background-color: #272626;
+    padding: 24px;
+    max-width: 60vw;
+    margin: 34px auto;
+    cursor: pointer;
+
+    font-size: 24px;
+    font-weight: bolder;
 }
