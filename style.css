@@ -396,7 +396,7 @@ footer {
 
 @media screen and (max-width: 480px) {
     .main {
-        min-height: auto;
+        height: 100vh;
     }
 
     .main .box {
@@ -405,7 +405,7 @@ footer {
 
     nav {
         flex-direction: column;
-        gap: 12px;
+        gap: 20px;
         padding: 12px 10px;
     }
 
@@ -414,8 +414,10 @@ footer {
     }
 
     nav img {
-        width: 90px;
+        width: 185px;
         margin-bottom: 8px;
+        position: relative;
+        left: 13px;
     }
 
     .btn {
@@ -429,7 +431,7 @@ footer {
 
     .hero {
         gap: 12px;
-        padding: 25px 12px;
+        padding: 0px 0px;
         min-height: auto;
     }
 
