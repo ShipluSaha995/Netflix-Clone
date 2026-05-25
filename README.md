@@ -30,7 +30,7 @@ The primary goal of this project was to:
 
 ![Netflix Clone Screenshot](preview.png)
 
-> Add a screenshot of your project and save it as `preview.png` in the project folder.
+
 
 ## 📂 Project Structure
 
@@ -46,7 +46,6 @@ Netflix-Clone/
 
 ## 🌐 Live Demo
 
-Add your deployed project link here:
 
 ```
 https://shiplusaha995.github.io/Netflix-Clone/
