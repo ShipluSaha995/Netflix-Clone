@@ -36,12 +36,13 @@ nav {
     z-index: 10;
 }
 
-nav div{
+nav div {
     position: relative;
     left: 20px;
     top: 8px;
 }
-nav img{
+
+nav img {
     width: 150px;
     position: relative;
     z-index: 10;
@@ -105,7 +106,7 @@ body {
     color: aliceblue;
     border-radius: 3px;
     cursor: pointer;
-    
+
 }
 
 .btn-red {
@@ -149,60 +150,91 @@ body {
     margin: auto;
     color: white;
     align-items: center;
-    position: relative;  /* Add this */
-}
-
-.secImg{
     position: relative;
+    /* Add this */
 }
 
-.secImg img{
-    width: 30vw;
+
+
+@media screen and (max-width:1322px) {
+    .first {
+        flex-wrap: wrap;
+    }
+}
+
+
+
+.secImg {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-height: 400px;
+    overflow: hidden;
+    /* ← This prevents overflow */
+}
+
+.secImg img {
+    width: 100%;
+    max-width: 586px;
+    height: auto;
+    object-fit: contain;
+    display: block;
     position: relative;
     z-index: 10;
-
 }
 
-.secImg video{
+
+.secImg video {
     position: absolute;
-    top: 85px;
-    right: 11px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* ← Center the video */
+    max-width: 85%;
+    max-height: 85%;
+    height: auto;
+    width: auto;
+    object-fit: contain;
+    z-index: 5;
 }
 
-section.first > div{
+section.first>div {
     display: flex;
     flex-direction: column;
+    padding: 34px 0;
 }
 
-.first > div > :first-child{
+.first>div> :first-child {
     font-size: 48px;
     font-weight: bolder;
 }
 
-.first > div > :nth-child(2){
+.first>div> :nth-child(2) {
     font-size: 24px;
     font-weight: 400;
 }
 
-.faq h2{
+.faq h2 {
     text-align: center;
     font-size: 48px;
 }
 
 
-.faq{
+.faq {
     background: black;
     color: white;
     padding: 34px;
 }
 
-.faqbox:hover{
-    
+.faqbox:hover {
+
     background-color: rgb(70, 66, 66);
 }
 
-.faqbox{
-    transition: all ;
+.faqbox {
+    transition: all;
     display: flex;
     justify-content: space-between;
     background-color: #272626;
@@ -216,15 +248,342 @@ section.first > div{
 }
 
 
-footer{
+footer {
+    color: white;
+    margin: auto;
+    max-width: 60vw;
+    padding: 34px;
+}
+
+
+
+
+.footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     color: white;
-    max-width: 60vw;
-    margin: auto;
 }
 
-.footer-item{
+.footer a {
+    font-size: 14px;
+    color: white;
+}
+
+.footer-item {
     display: flex;
     flex-direction: column;
+    gap: 23px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    .first {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 30px 15px;
+    }
+
+    .first.second {
+        direction: ltr;
+        grid-template-columns: 1fr;
+    }
+
+    .first.second>div {
+        order: 2;
+    }
+
+    .first.second .secImg {
+        order: 1;
+    }
+
+    .first.third {
+        grid-template-columns: 1fr;
+    }
+
+
+    .secImg {
+        max-height: 300px;
+    }
+
+    .secImg img {
+        max-width: 534px;
+    }
+
+    .secImg video {
+        max-width: 75%;
+        max-height: 75%;
+    }
+
+    .hero {
+        gap: 16px;
+        padding: 30px 15px;
+        min-height: auto;
+    }
+
+    .hero> :first-child {
+        font-size: clamp(1.5rem, 7vw, 2.5rem);
+    }
+
+    .hero-button {
+        max-width: 100%;
+        flex-direction: column;
+    }
+
+    .main input {
+        padding: 12px 14px;
+        font-size: 16px;
+    }
+
+    .btn-red {
+        padding: 12px 20px;
+        font-size: 16px;
+    }
+
+    .faqbox {
+        padding: 16px;
+        font-size: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .footer {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    nav {
+        padding: 12px 15px;
+    }
+
+    nav img {
+        width: 100px;
+        
+    }
+
+    nav div {
+        gap: 8px;
+    }
+
+    .btn {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    .faq h2 {
+        font-size: clamp(1.5rem, 5vw, 2rem);
+        margin-bottom: 25px;
+    }
+}
+
+/* ============ MOBILE RESPONSIVE - PHONES (480px) ============ */
+
+@media screen and (max-width: 480px) {
+    .main {
+        min-height: auto;
+    }
+
+    .main .box {
+        opacity: 0.75;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 12px;
+        padding: 12px 10px;
+    }
+
+    nav div {
+        gap: 6px;
+    }
+
+    nav img {
+        width: 90px;
+        margin-bottom: 8px;
+    }
+
+    .btn {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+
+    .btn-red-sm {
+        padding: 6px 12px;
+    }
+
+    .hero {
+        gap: 12px;
+        padding: 25px 12px;
+        min-height: auto;
+    }
+
+    .hero> :first-child {
+        font-size: clamp(1.25rem, 6vw, 2rem);
+        line-height: 1.1;
+    }
+
+    .hero> :nth-child(2) {
+        font-size: clamp(0.95rem, 3.5vw, 1.3rem);
+    }
+
+    .hero> :nth-child(3) {
+        font-size: clamp(0.85rem, 2.5vw, 1rem);
+    }
+
+    .hero-button {
+        gap: 10px;
+        margin-top: 15px;
+    }
+
+    .main input {
+        padding: 10px 12px;
+        font-size: 14px;
+    }
+
+    .btn-red {
+        padding: 10px 16px;
+        font-size: 14px;
+    }
+
+    .first {
+        padding: 25px 12px;
+        gap: 15px;
+    }
+
+    .first>div> :first-child {
+        font-size: clamp(1.25rem, 4vw, 1.75rem);
+    }
+
+    .first>div> :nth-child(2) {
+        font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+    }
+
+    .secImg {
+        max-height: 250px;
+    }
+
+    .secImg img {
+        max-width: 277px;
+    }
+
+    .secImg video {
+        max-width: 70%;
+        max-height: 70%;
+    }
+
+    .faq {
+        padding: 25px 12px;
+    }
+
+    .faq h2 {
+        font-size: clamp(1.25rem, 4vw, 1.75rem);
+        margin-bottom: 20px;
+    }
+
+    .faqbox {
+        padding: 14px;
+        font-size: clamp(0.9rem, 2.5vw, 1rem);
+        margin: 8px auto;
+    }
+
+    .faqbox svg {
+        min-width: 20px;
+        width: 20px;
+        height: 20px;
+    }
+
+    footer {
+        padding: 25px 12px;
+    }
+
+    .footer {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .footer-item a {
+        font-size: clamp(0.8rem, 2vw, 0.9rem);
+    }
+}
+
+/* ============ ULTRA-SMALL DEVICES (320px) ============ */
+
+@media screen and (max-width: 360px) {
+    nav {
+        padding: 10px 8px;
+    }
+
+    nav img {
+        width: 80px;
+    }
+
+    .hero {
+        padding: 20px 10px;
+        gap: 10px;
+    }
+
+    .first {
+        padding: 20px 10px;
+        gap: 12px;
+    }
+
+    .faq {
+        padding: 20px 10px;
+    }
+
+    .faqbox {
+        padding: 12px;
+        font-size: 0.9rem;
+        margin: 8px auto;
+    }
+
+    footer {
+        padding: 20px 10px;
+    }
+
+    .secImg {
+        max-height: 200px;
+    }
+
+    .secImg img {
+        max-width: 150px;
+    }
+}
+
+/* ============ LARGE DESKTOP (1920px+) ============ */
+
+@media screen and (min-width: 1920px) {
+    .first {
+        gap: 60px;
+        padding: 60px 40px;
+    }
+
+    .hero {
+        gap: 30px;
+        padding: 60px 40px;
+    }
+
+    .faqbox {
+        max-width: 900px;
+    }
+
+    footer {
+        padding: 60px 40px;
+    }
 }
