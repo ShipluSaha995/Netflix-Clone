@@ -67,9 +67,6 @@ Through this project, I gained hands-on experience with:
 
 **Shiplu Saha**
 
-- CSE Student, Green University of Bangladesh
-- Aspiring AI Engineer
-- Interested in Web Development, AI, and Machine Learning
 
 ## ⭐ Acknowledgements
 
