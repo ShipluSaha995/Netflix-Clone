@@ -48,7 +48,7 @@ Netflix-Clone/
 
 
 ```
-https://shiplusaha995.github.io/Netflix-Clone/
+https://netflix-clone-steel-three.vercel.app/
 ```
 
 ## 📚 What I Learned
